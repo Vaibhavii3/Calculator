@@ -1,5 +1,5 @@
-*{
-    font-family:'Courier New', Courier, monospace;
+* {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,14 +10,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #848789;
+    background-color: #e6e067;
 }
 
 .calculator {
-    background: #89e6d2;
+    background: #ffa07a;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow:  10px 10px 18px #424040;
+    box-shadow: 10px 10px 18px #573d3d;
 }
 
 .calculator .display {
@@ -25,10 +25,9 @@ body {
     padding: 20px;
     font-size: 25px;
     text-align: right;
-    background: #000000;
-    opacity: 0.5;
+    background: #ffdead;
     border: none;
-    color: #fff;
+    color: #000;
 }
 
 .calculator .keys {
@@ -45,17 +44,14 @@ body {
     cursor: pointer;
     font-size: 25px;
     font-weight: 500;
-    background: #ffffff;
-    color: #000000;
+    background: #ffb6c1;
+    color: #000;
     border: none;
     transition: 0.3s;
-    box-shadow:  5px 5px 10px #5b5252, inset -5px -5px 7px #398271;
+    box-shadow: 5px 5px 10px #cd5c5c, inset -5px -5px 7px #ffa07a;
 }
-
 
 .keys button:hover {
-    background: rgb(255, 255, 255);
-    box-shadow:  5px 5px 10px #398271, inset -5px -5px 5px #868585;
+    background: #ff69b4;
+    box-shadow: 5px 5px 10px #ffa07a, inset -5px -5px 5px #ff6347;
 }
-
-

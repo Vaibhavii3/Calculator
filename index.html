@@ -4,39 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calc</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" id="theme-link">
 
 </head>
 <body>
-    <div class="calculator">
-        <input placeholder="0" class="display" readonly />
 
-        <div class="keys">
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('00')">00</button>
-            <button onclick="appendToDisplay('%')">%</button>
-            <button onclick="backSpace()"> &#9003; </button>
-            <button onclick="clearDisplay()"> C </button>
-            <button onclick="calculate()"> = </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <h1>Calculator</h1>
+                <div class="theme-selector">
+                    <label for="themes">Choose a theme:</label>
+                    <select id="themes" onChange="changeTheme(this.value)">
+                        <option value="style.css">Default</option>
+                        <option value="dark.css">Dark</option>
+                        <option value="colorful.css">Colorful</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="calculator">
+                <input placeholder="0" class="display" readonly />
+                
+                <div class="keys">
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <button onclick="appendToDisplay('%')">%</button>
+                    <button onclick="backSpace()"> &#9003; </button>
+                    <button onclick="clearDisplay()"> C </button>
+                    <button onclick="calculate()"> = </button>
+                </div>
+            </div>
         </div>
+
+
+
     </div>
+    
+
+
+
+    
 
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
